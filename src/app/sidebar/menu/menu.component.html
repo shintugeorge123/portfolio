@@ -1,0 +1,16 @@
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <app-menuitem *ngFor="let menuitem of menuItems" [title]="menuitem.title" [class]="menuitem.class" [menuIcon]="menuitem.menuIcon"></app-menuitem>
+  </div>
+  <div class="w3-panel w3-large">
+    <app-icon *ngFor="let icon of iconList" iconname="{{icon.iconname}}" class="w3-hover-opacity"> </app-icon>
+  </div>
+</nav>

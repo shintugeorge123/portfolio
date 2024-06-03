@@ -1,0 +1,6 @@
+<app-skill *ngFor="let skill of skillList" [skillTitle]="skill.skillTitle" [percentage]="skill.percentage"></app-skill>
+
+<p>
+  <app-filterbutton *ngFor="let button of buttonList" [buttonName]="button.buttonName" [buttonClass]="button.buttonClass" [hasIcon]="hasIcon" [iconname]="button.iconName">
+  </app-filterbutton>
+</p>
